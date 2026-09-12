@@ -9,13 +9,13 @@
 
 </head>
 
-<body style="background-color: rgb(14, 34, 0);">
+<body>
   <h1>
     MertKapiy
     <img src="mmeryt.png" alt="mmeryt" height="70">
   </h1>
   <hr>
-  <p style="padding: .5em;">heeheeheehaugh heeheeheehaugh heeheeheehaugh
+  <p style="padding: .5em;z-index: 1;">heeheeheehaugh heeheeheehaugh heeheeheehaugh
     heeheeheehaugh
     heeheeheehaugh
     heeheeheehaugh heeheeheehaugh
@@ -51,6 +51,9 @@
     Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga eius magni qui deleniti corrupti ut adipisci ex rerum
     numquam! Sapiente esse dolor sequi dignissimos aspernatur natus incidunt illo placeat modi?
   </p>
+  <p>
+    minecraf
+  </p>
   <a href="https://9musti.netlify.app" target="_blank">my bruh</a>
   <button>my button</button>
   <hr>
@@ -63,6 +66,40 @@
     <summary>321</summary>
     987
   </details>
+  <img src="./head.gif" alt="head">
+  <canvas></canvas>
 </body>
+<script>
+  const canvas = document.querySelector("canvas")
+  const ctx = canvas.getContext("2d")
+
+  canvas.width = window.innerWidth
+  canvas.height = 300
+
+  ctx.fillStyle = "#060"
+  let t = 0
+  const sq = []
+
+  function update() {
+    t++
+    ctx.clearRect(0, 0, canvas.width, canvas.height)
+    if (t % 20 == 0) {
+      sq.push([Math.floor(Math.random() * canvas.width / 20) * 20, canvas.height])
+      sq.push([Math.floor(Math.random() * canvas.width / 20) * 20, canvas.height])
+    }
+    sq.forEach(s => {
+      s[1] -= 1
+      ctx.fillRect(s[0] - 10, s[1] + 20, 20, 20)
+      if (s[1] < -20) sq.splice(sq.indexOf(s), 1)
+    })
+    requestAnimationFrame(update)
+  }
+  update()
+
+  /*setInterval(() => {
+    sq.forEach(s => {
+    })
+  }, 10)*/
+</script>
 
 </html>
