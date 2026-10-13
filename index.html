@@ -7,64 +7,91 @@
   <title>MertKapiy6</title>
   <link rel="stylesheet" href="/style.css">
   <link rel="shortcut icon" href="mmeryt.png" type="image/x-icon">
+  <style>
+    .decoball {
+      background: radial-gradient(circle at 50% 20%, #040 50%, #060);
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      position: relative;
+      box-shadow: 0 5px 10px #0005;
+      animation: wigl infinite alternate .6s cubic-bezier(0, 0, .5, 1);
 
+      &::after {
+        content: "";
+        position: absolute;
+        top: 3px;
+        left: 3px;
+        right: 3px;
+        height: 25px;
+        border-radius: 25px 25px 5px 5px;
+        background: linear-gradient(#fff4, #fff1);
+      }
+    }
+
+    @keyframes wigl {
+      from {
+        translate: 0 0;
+      }
+
+      to {
+        translate: 0 -15px;
+      }
+    }
+  </style>
 </head>
 
 <body>
-  <nav>
+  <main>
     <h1>
       MertKapiy
-      <img src="mmeryt.png" alt="mmeryt" height="70">
+      <img src="mmeryt.png" alt="6" height="70">
     </h1>
-  </nav>
-  <hr>
-  <p style="padding: .5em;z-index: 1;">heeheeheehaugh heeheeheehaugh heeheeheehaugh
-    heeheeheehaugh
-    heeheeheehaugh
-    heeheeheehaugh heeheeheehaugh
-    heeheeheehaugh heeheeheehaugh heeheeheehaugh heeheeheehaugh heeheeheehaugh heeheeheehaugh heeheeheehaugh
-    heeheeheehaugh heeheeheehaugh heeheeheehaugh heeheeheehaugh heeheeheehaugh heeheeheehaugh heeheeheehaugh
-    heeheeheehaugh heeheeheehaugh heeheeheehaugh heeheeheehaugh heeheeheehaugh heeheeheehaugh heeheeheehaugh
-    heeheeheehaugh heeheeheehaugh heeheeheehaugh heeheeheehaugh heeheeheehaugh heeheeheehaugh heeheeheehaugh
-    heeheeheehaugh heeheeheehaugh heeheeheehaugh heeheeheehaugh heeheeheehaugh heeheeheehaugh heeheeheehaugh
-    heeheeheehaugh heeheeheehaugh heeheeheehaugh heeheeheehaugh heeheeheehaugh heeheeheehaugh heeheeheehaugh
-    heeheeheehaugh heeheeheehaugh heeheeheehaugh heeheeheehaugh heeheeheehaugh heeheeheehaugh heeheeheehaugh
-    heeheeheehaugh heeheeheehaugh heeheeheehaugh heeheeheehaugh heeheeheehaugh heeheeheehaugh heeheeheehaugh
-    heeheeheehaugh heeheeheehaugh heeheeheehaugh heeheeheehaugh heeheeheehaugh heeheeheehaugh heeheeheehaugh
-    heeheeheehaugh heeheeheehaugh heeheeheehaugh heeheeheehaugh heeheeheehaugh heeheeheehaugh heeheeheehaugh
-    heeheeheehaugh heeheeheehaugh heeheeheehaugh heeheeheehaugh heeheeheehaugh heeheeheehaugh heeheeheehaugh
-    heeheeheehaugh heeheeheehaugh heeheeheehaugh heeheeheehaugh heeheeheehaugh heeheeheehaugh heeheeheehaugh
-    <br>
-    ඞඞඞඞඞඞඞඞඞඞඞඞඞඞඞ
-    <br>
-    ヾ(•ω•`)o
-  </p>
-  <p>
-    they eat the baby
-    <br>
-    minceraf
-  </p>
-  <a href="https://9musti.netlify.app" target="_blank">my bruh</a>
-  <button id="purpbtn">my but</button>
-  <hr>
-  <section>
-    <div class="card">
-      <img src="" alt="">
+    <p style="padding: .5em;z-index: 1;margin: 0;">
+      <img style="float: left;height: 2em;mix-blend-mode: lighten;" src="./head.gif" alt="head">
+      heeheeheehaugh heeheeheehaugh heeheeheehaugh
+      heeheeheehaugh
+      heeheeheehaugh
+      heeheeheehaugh heeheeheehaugh
+      heeheeheehaugh heeheeheehaugh heeheeheehaugh heeheeheehaugh heeheeheehaugh heeheeheehaugh heeheeheehaugh
+      heeheeheehaugh heeheeheehaugh heeheeheehaugh heeheeheehaugh heeheeheehaugh heeheeheehaugh heeheeheehaugh
+      heeheeheehaugh heeheeheehaugh heeheeheehaugh heeheeheehaugh heeheeheehaugh heeheeheehaugh heeheeheehaugh
+      heeheeheehaugh heeheeheehaugh heeheeheehaugh heeheeheehaugh heeheeheehaugh heeheeheehaugh heeheeheehaugh
+      heeheeheehaugh heeheeheehaugh heeheeheehaugh heeheeheehaugh heeheeheehaugh heeheeheehaugh heeheeheehaugh
+      heeheeheehaugh heeheeheehaugh heeheeheehaugh heeheeheehaugh heeheeheehaugh heeheeheehaugh heeheeheehaugh
+      heeheeheehaugh heeheeheehaugh heeheeheehaugh heeheeheehaugh heeheeheehaugh heeheeheehaugh
+      <br>
+      ඞඞඞඞඞඞඞඞඞඞඞඞඞඞඞ
+      <br>
+      ヾ(•ω•`)o
+    </p>
+    <p>
+      minceraf
+    </p>
+    <div class="decoball"></div>
+    <button id="purpbtn">button</button>
+    <hr>
+    <section>
+      <div class="card">
+        <img src="" alt="">
+      </div>
+    </section>
+    <input type="checkbox">
+    <fieldset>
+      <legend>123</legend>
+      456
+    </fieldset>
+    <details>
+      <summary>321</summary>
+      987
+    </details>
+    <div class="canvascontainer">
+      <canvas></canvas>
     </div>
-  </section>
-  <input type="checkbox">
-  <fieldset>
-    <legend>123</legend>
-    456
-  </fieldset>
-  <details>
-    <summary>321</summary>
-    987
-  </details>
-  <img src="./head.gif" alt="head">
-  <div class="canvascontainer">
-    <canvas></canvas>
-  </div>
+  </main>
+  <a href="https://9musti.netlify.app" target="_blank" style="position: fixed;bottom: 0;right: 0;opacity: .1;">
+    9musti
+  </a>
 </body>
 <script>
   const canvas = document.querySelector("canvas")
@@ -106,6 +133,17 @@
     sq.forEach(s => {
     })
   }, 10)*/
+  const trgdpel = document.querySelector("main")
+  document.addEventListener("mousemove", e => {
+    const x = e.clientX - window.innerWidth / 2
+    const y = e.clientY - window.innerHeight / 2
+    const ang = Math.atan2(y, x) * (180 / Math.PI);
+    const ang2 = Math.atan2(x, y) * (180 / Math.PI);
+    trgdpel.style.borderTopColor = "rgb(0," + Math.abs(ang2) / 2 + ",0)"
+    trgdpel.style.borderLeftColor = "rgb(0," + Math.abs(-ang) / 2 + ",0)"
+    trgdpel.style.borderBottomColor = "rgb(0," + (90 - Math.abs(ang2) / 2) + ",0)"
+    trgdpel.style.borderRightColor = "rgb(0," + (90 - Math.abs(-ang) / 2) + ",0)"
+  })
 </script>
 
 </html>

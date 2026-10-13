@@ -4,12 +4,18 @@
     color-scheme: dark;
     font-family: 'Inter', sans-serif;
     accent-color: #0f0;
-    --bg: rgb(14, 34, 0);
+    --bg: #040c;
     -webkit-tap-highlight-color: transparent;
 }
 
 body {
-    background-color: var(--bg);
+    background: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100dvh;
+    margin: 0;
+    color: #cfc;
 }
 
 h1 {
@@ -17,21 +23,6 @@ h1 {
     align-items: center;
     justify-content: center;
     position: relative;
-
-    &::after {
-        content: "";
-        position: absolute;
-        top: calc(100% + 10px);
-        right: calc(50% - 90px);
-        background: var(--bg);
-        border-right: 3px solid #0f0;
-        border-top: 3px solid #0f0;
-        width: 50px;
-        height: 50px;
-        transform: rotate(15deg) scaleX(.5) rotate(-45deg);
-        border-bottom-left-radius: 100%;
-        corner-bottom-left-shape: bevel;
-    }
 }
 
 ::selection {
@@ -101,4 +92,17 @@ hr {
     to {
         rotate: 360deg;
     }
+}
+
+main {
+    background: radial-gradient(circle at 50% 100%, #0000 85%, #0f01 85.1%, #0f00), linear-gradient(#030, #041);
+    width: 768px;
+    max-width: calc(100dvw - 4em);
+    border-radius: .5em;
+    padding: .5em 1em;
+    max-height: calc(100dvh - 4em);
+    overflow: auto;
+    box-shadow: 0 5px 10px #0008;
+    border: 1px solid #030;
+    scrollbar-color: currentColor #0000;
 }
